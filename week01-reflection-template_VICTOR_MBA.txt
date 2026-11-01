@@ -1,0 +1,55 @@
+# Week 01 Reflection
+
+1. Include a link to one of your Pull Requests (PRs) at GitHub. (It should be merged and closed at this point.)
+
+GitHub Pull Request Link: https://github.com/victormba-kalu/cse341-books/pull/5
+
+2. Include a link to one of your Issues at GitHub. (It should be closed at this point.)
+
+GitHub Issue Link: https://github.com/victormba-kalu/cse341-books/issues/1
+
+3. Which issue took more or less time than expected? Why?
+
+Answer: Issue 1 (Create the books collection and connect the app to MongoDB) took more time because that was really my first time working with MongoDB so I had to spend
+some good time getting used to the software. It was a bit difficult finding and executing each function as well. The other issues were relatively easier.
+
+4. Include a link to your walk-though video. (It must include your name, show your web service working at Render, explain the way your `Get Single Book` controller works, and discuss status codes.):
+
+Video link: https://www.loom.com/share/5c25c5fb45604dd6a06d92ede02f0e5b
+
+5.a. Include a GitHub link to a file that shows how your app uses sensitive data, such as the MongoDB connection string.
+
+GitHub link: https://github.com/victormba-kalu/cse341-books/blob/main/src/db/connect.js
+
+5.b. How did you store sensitive data? Why is that approach important?
+
+Answer: Sensitive date like the MongoDB connection string was stored using the .env file.
+It wasn't entered directly in the connect.js file but was assigned to a variable that referenced the .env file.
+Finally, I made sure to exclude the .env file from my commits using the .gitignore template.
+
+This approach is important because it ensures that private information like passwords are kept out of my commits
+and do not get exposed to public repositories like on Github.
+They remain permanently stored on my machine or on the environment variable on Render. 
+
+6.a. Include a GitHub link to a file that shows one other implementation decision you made.
+
+GitHub link: https://github.com/victormba-kalu/cse341-books/blob/main/src/controllers/books.js
+
+6.b. What decision does this file show, and why did you make that choice?
+
+Answer: The file shows how tasks seperation and safe error handling.
+Instead of putting everything together like the route urls, db queries, I keep them seperated.
+The controller's job is to take the web request, ask the model for the book data and send back a clean
+JSON response. This keeps my code clean and easy to read.
+
+As well, to ensure good error handling, if a book is found, it sends a clear 200 status.
+If it isn't found, it sends a 404 error.
+If the database crashes, the catch block catches it, and logs the error to my terminal so I can fix it.
+It also sends a 500 internal server error to the user.
+
+I made this choice because it protects my app. If something breaks, users and potential hackers only see a friendly error message 
+instead of private database details or sensitive crash reports.
+
+7. What is one specific habit or process you will work on for next week?
+
+Answer: One specific process I will work on for the next week is how to develop a detailed specification in the software design process.
