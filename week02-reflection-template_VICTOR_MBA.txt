@@ -1,0 +1,37 @@
+# Week 02 Reflection
+
+## Links
+
+1. Provide your walk-through video link. This video must demonstrate your API working at Render and follow the script in the assignment.
+Video link: https://www.loom.com/share/27d2699e6e824c38a1b7ab5705f16054
+
+2. Provide a link to your deployed Render api-docs URL:
+Render link: https://cse341-books-36t0.onrender.com/api-docs/
+
+3. Provide links to your Pull Requests (they should be merged at this point):
+Books PR: https://github.com/victormba-kalu/cse341-books/pull/11
+Authors PR: https://github.com/victormba-kalu/cse341-books/pull/10
+
+4. Provide links to your GitHub Issues (they should be closed at this point).
+Books Issue: https://github.com/victormba-kalu/cse341-books/issues/8
+Authors Issue: https://github.com/victormba-kalu/cse341-books/issues/9
+
+## Plan vs. Implementation
+
+5. Which part of the work took more or less time than expected? Why?
+
+Answer: Developing the code specification at the beginning of the project took more time than other parts of the program. In last week's assignment, the code specifications
+were handed to me but in this weeks, I had to do a part of it myself and that took me a while. I'm grateful that I had last week's specifications and part of this week's to guide me 
+in completing the code specifications for this week's application.
+
+6. How did Swagger help you in your work this week
+
+Answer: The Swagger provided a very convenient way for me to test all parts of my application. It helped me understand my code better. I didn't understand
+the relationship between the books and author collections created in my database but due to the ease of testing provided by Swagger, I was able to experiment with different
+requests to get a comprehensive understanding of the database.
+
+## Week 03 Improvement
+
+7. What is one specific habit or process you will apply next week?
+
+Answer: I want to get better at creating a plan for my application by getting better at writing code issues on Github with little or no assistance.
